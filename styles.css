@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(13,91,95);
+    background: linear-gradient(90deg, rgba(13,91,95,1) 1%, rgba(222,225,198,1) 100%);
+    text-align: center;
+    font-family: Arial, sans-serif; /* Fallback font */
+}
+
+h1 {
+    font-family: 'Pacifico', cursive; /* Apply the Google Font */
+    font-size: 3rem;
+    color: white;
+    margin-top: 2rem;
+    animation: fadeIn 2s ease-in-out; /* Apply animation */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
